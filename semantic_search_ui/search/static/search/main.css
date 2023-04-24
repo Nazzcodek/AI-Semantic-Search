@@ -1,0 +1,42 @@
+body {
+    background: #fafafa;
+    color: tomato;
+    margin-top: 10rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #444444;
+}
+.navbar-brand {
+    font-size: 30px;
+}
+ul {
+    margin: 0;
+}
+
+.bg-steel {
+    background-color: #ed1717;
+}
+
+.site-header .navbar-nav .nav-link {
+    color: #145277;
+    font-size: 20px;
+    text-align: left;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+    color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+    font-weight: 500;
+}
+
+
+.content-section {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 3px;
+}

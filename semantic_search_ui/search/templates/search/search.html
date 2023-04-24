@@ -1,0 +1,26 @@
+{% extends "search/base.html" %}
+
+{% block content %}
+<h1>
+    Enter your Query and get similar responses
+</h1>
+
+<form method="get" action="{% url 'search' %}">
+    <input type="text" name="query">
+    <button type="submit">Search</button>
+</form>
+
+{% if matches %}
+    <h2>Search Results for "{{ query }}"</h2>
+    <ul>
+    {% for match in matches %}
+        <li>{{ match }}</li>
+    {% endfor %}
+    </ul>
+{% endif %}
+
+{% if not matches and query %}
+    <h2>No Results Found for "{{ query }}"</h2>
+{% endif %}
+
+{% endblock content %}
